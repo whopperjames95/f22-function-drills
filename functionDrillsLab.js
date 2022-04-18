@@ -222,12 +222,14 @@ printAllNames(namesArr)
 
 //CODE HERE
 function thatsOdd(num) {
-  if(num % 2 === 0){
+  if(num % 2 === 0){             // if problem asks for "if the number is even", always put x % 2 === 0
     return "That's not odd"
   } else {
     return "That is odd indeed"
   }
 }  
+
+let oddChecker = thatsOdd(15)
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -239,6 +241,9 @@ function thatsOdd(num) {
 */
 
 //CODE HERE
+const bestMovie = Batman => {
+  return + Batman 'is the best movie ever'
+}
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -253,7 +258,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr) {
+  let answers = []
+  for(let i = 0; i < arr.length; i++) {     //for loop equation 
+  if (arr[i] > 100) {
+    answers.push('big')
+  } else {
+    answers.push('small')
+  }
+}
+return answers
+}
 
+let arrayEvaluator = bigOrSmall(bigOrSmallArray )
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -264,8 +281,16 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(constestants, loser) {
+  for (let i = 0; i< contestants.length; i++) {
+    if (constentants[i] === loser) {
+      contestants.splice(i, 1)
+    }
+  }
+  return contestants
+}
 
-
+let updatedContestants = theEliminator(contestants, loser)
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -274,7 +299,7 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function sampleString
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -311,8 +336,18 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function isArraySorted(arr) {
+  let checker = arr[0];
+  for( let i = 1; i < arr.length; i++) {
+    if(arr[i] < checker) {
+      return false;
+    } else {
+      checker = arr[i];
+    }
+  }
+}
 
-
+let arrayIsAscending = isArraySorted(sampleArray);
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
