@@ -51,8 +51,11 @@ printName('James')
 */
 
 //CODE HERE
-
-
+function greeting(name) {      //naming the function (name) inside, only parameter
+    name = String(name)
+    console.log(`Hello, ${name}`)
+}
+greeting('Jake')
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -65,7 +68,14 @@ printName('James')
 */
 
 //CODE HERE
-
+// using the RETURN CODE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -76,7 +86,11 @@ printName('James')
 */
 
 //CODE HERE
-
+function add(num, num2) {   //num1 and num2 are the 2 parameters
+num = +num
+num2 = +num2
+return num + num2     //here is the add function RETURN the 2 parameters(num1, num2) added together
+} let sum = add(12, 24)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -91,7 +105,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+ expression
 
 
 
@@ -106,7 +120,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+ arrow
 // declaration
 // expression
 
@@ -116,7 +130,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimThree = str => '${str.toUpperCase()}!!!'
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -131,7 +145,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+ declaration
 // expression
 
 
@@ -145,8 +159,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck (name) {
+  if(name === 'Steven') {
+    return "What is up Steven?"
+  } else if(name === Bryan){
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+} 
 
-
+let nameGreeting = nameCheck('Steven')
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -158,7 +181,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function faveColorFinder (color) {
+  if(color === red){
+    return 'red is a great color'
+  } else if(color === green) {
+    return 'green is a solid favorite color'
+  } else if(color = black) {
+    return 'so trendy'
+  } else{
+     return 'you need to evaluate your favorite color choice'
+  }
+}
 
+let colorRating = faveColorFinder('green')
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -169,7 +204,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames(names) {
+  for(let i = 0; i < names.length; i++){
+    console.log(names[i])
+  }
+}
 
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -180,8 +221,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+function thatsOdd(num) {
+  if(num % 2 === 0){
+    return "That's not odd"
+  } else {
+    return "That is odd indeed"
+  }
+}  
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
