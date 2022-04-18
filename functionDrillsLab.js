@@ -24,7 +24,7 @@ helloWorld()
 */
 
 //CODE HERE
-
+const jsNinja = () => 'I am a JavaScript ninja!' //Arrow Function Example 
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -34,7 +34,10 @@ helloWorld()
 */
 
 //CODE HERE
-
+function printName(name) {
+  console.log(name)
+}
+printName('James')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
